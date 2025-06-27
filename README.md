@@ -47,12 +47,13 @@ Contiene le informazioni sui prodotti venduti con una struttura gerarchica:
 
 ## Risoluzione dei Problemi di Relazione
 
-![Relazione Many-to-Many](image.png)
+
+![Relazione Many-to-Many](assets/problema-iniziale-molti-a-molti.png)
 *Figura: Problema iniziale di relazione molti-a-molti tra dimAccount e factSales*
 
 Durante la creazione del modello dati, ho identificato un problema nella relazione tra dimAccount e factSales: si era creata una relazione molti-a-molti anziché uno-a-molti. L'analisi ha rivelato che la chiave primaria Account_id di dimAccount conteneva valori nulli.
 
-![Valori Nulli](image_1.png)
+![Valori Nulli](assets/valori-vuoti-in-accountid.png)
 *Figura: Identificazione dei valori nulli nella colonna Account_id*
 
 **Soluzione:** Rimozione dei valori nulli dalla colonna Account_id, ripristinando la corretta relazione uno-a-molti.
@@ -94,7 +95,7 @@ GP% = DIVIDE([Gross Profit], [Sales])
 
 ### Pagina 1: Dashboard Principale (Home)
 
-![Dashboard Plant Shop](Pagina_1.png)
+![Dashboard Plant Shop](assets/home.png)
 *Figura 1: Dashboard principale del Plant Shop con layout a 5 sezioni*
 
 La pagina principale offre una visione d'insieme delle performance attraverso un design intuitivo e funzionale:
@@ -114,23 +115,20 @@ La pagina principale offre una visione d'insieme delle performance attraverso un
    - Confronto year-over-year
    - Andamento del periodo corrente
    
-   ![Switch Waterfall](image_2.png)
+   ![Switch Waterfall](assets/home-switch.png)
    *Figura 2: Switch per alternare tra vista comparativa e andamento corrente*
 
 5. **Controlli Utente:** Opzione per attivare la modalità Dark Mode
 
-   ![Modalità Dark](image_3.png)
+   ![Modalità Dark](assets/home-dark.png)
    *Figura 3: Interfaccia in modalità scura per migliorare l'esperienza utente*
 
 **Insight esempio:** Nel 2024, le vendite totali sono diminuite del 3,67% rispetto al 2023, con il Canada come peggior performer (-74k) e la Thailandia come migliore (+88k).
 
 ### Pagina 2: Analisi Prodotti per Tipologia/Dimensione
 
-![Analisi per Tipologia](image_4.png)
+![Analisi per Tipologia](assets/product-type-size.png)
 *Figura 4: Vista dell'analisi per tipologia prodotto - focus su categoria Outdoor*
-
-![Analisi per Dimensione](image_5.png)
-*Figura 5: Switch dinamico per alternare tra analisi Type e Size*
 
 Questa pagina esplora le performance per categoria di prodotto:
 
@@ -142,7 +140,7 @@ Questa pagina esplora le performance per categoria di prodotto:
 
 ### Pagina 3: Sales Analyzer
 
-![Sales Analyzer Overview](image_6.png)
+![Sales Analyzer Overview](assets/sales-analyzer.png)
 *Figura 6: Scatterplot personalizzabile per analisi multidimensionale*
 
 Pagina di analisi avanzata con scatterplot personalizzabile:
@@ -151,14 +149,14 @@ Pagina di analisi avanzata con scatterplot personalizzabile:
 - **Assi configurabili** per esplorazioni multidimensionali
 - **Tabella dinamica** che si filtra in base alle selezioni
 
-![Drill-down Polygonaceae](image_7.png)
+![Drill-down Polygonaceae](assets/sales-analyzer-detail.png)
 *Figura 7: Esempio di drill-down sulla famiglia Polygonaceae*
 
 **Caso d'uso esempio:** Identificazione della famiglia Polygonaceae, che pur avendo subito un calo del 50% nelle vendite, mantiene una redditività superiore al 70%, suggerendo opportunità di recovery.
 
 ### Pagina 4: Dettaglio Product Family
 
-![Product Family Detail](image_8.png)
+![Product Family Detail](assets/product-family.png)
 *Figura 8: Pagina dettaglio con immagini Wikipedia e visual SVG personalizzate*
 
 Pagina dedicata all'analisi approfondita di singole famiglie di prodotti:
