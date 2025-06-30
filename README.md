@@ -3,6 +3,13 @@
 **Creato:** 25 giugno 2025 15:40  
 **Tags:** Progetti, Power BI, Business Intelligence
 
+## 📊 Power BI Report – Plant Shop
+
+🔍 Esplora il report interattivo direttamente su Power BI:
+
+👉 [🔗 Visualizza il report Power BI](https://app.powerbi.com/reportEmbed?reportId=38f9a0ae-886d-41ca-87f3-e1587185e8a1&autoAuth=true&ctid=9bfa5866-930f-47e6-8d3c-1afc43c89e23)
+
+
 ## Introduzione al Progetto
 
 Questo documento descrive il processo di costruzione di un report di analisi delle vendite per il progetto Plant Shop utilizzando Power BI. L'obiettivo è creare un dashboard interattivo che permetta di monitorare le performance commerciali e identificare opportunità di crescita.
